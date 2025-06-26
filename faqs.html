@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technoit</title>
+  <!-- ! Page Title Icon -->
+  <link rel="icon" href="images/microchip-solid.svg" type="image/svg+xml">
+  <!-- ! Font Awesome Library -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- ! Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- ! Main Template CSS File -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/darkMode.css">
+  <link rel="stylesheet" href="css/singlePage.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <!-- ! Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap">
+  <!-- ! AOS Library -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <!-- ! Start Header -->
+  <header class="d-flex align-items-center fixed-top justify-content-around bg-transparent">
+    <!-- ! Start Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Technoit" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span>
+            <i class="fa-solid fa-sliders"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="testimonials.html">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Remote Session</a></li>
+                <li><a class="dropdown-item" href="about.html">About</a></li>
+                <li><a class="dropdown-item" href="faqs.html">FAQs</a></li>
+                <li><a class="dropdown-item" href="blogs.html">Blogs</a></li>
+                <li><a class="dropdown-item" href="blog-details.html">Blog Detail Page</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blogs.html">News</a>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-primary rounded-pill get-quotes"><a href="contact.html">Get
+              Quotes</a></button>
+          <button id="darkmode-button" class="btn rounded-circle">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- ! End Navbar -->
+  </header>
+  <!-- ! End Header -->
+  <div class="breadcrumbs sticked-header-offset">
+    <div class="page-header d-flex align-items-center">
+      <div class="container position-relative">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 data-aos="fade-up" data-aos-delay="300">FAQ's</h2>
+            <p data-aos="fade-up" data-aos-delay="400">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav aria-label="breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb" data-aos="fade-up" data-aos-delay="700">
+          <li class="breadcrumb-item Home"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">FAQ's</li>
+        </ol>
+      </div>
+    </nav>
+  </div>
+  <!-- ! Start FAQ's -->
+  <div class="faqs" id="faqs">
+    <div class="container" data-aos="fade-up">
+      <div class="row gy-4">
+        <div class="col-lg-12">
+          <div class="accordion accordion-flush" id="faqlist">
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq-content-1">
+                  <span class="num"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                  What is web domain and hosting?
+                </button>
+              </h3>
+              <div id="faq-content-1" class="accordion-collapse collapse show" data-bs-parent="#faqlist">
+                <div class="accordion-body">
+                  A domain is the unique name that identifies a website on the internet, like example.com. It's what users type into their browser 
+                  to visit your site, acting like a street address that leads people to your digital location. Domains are purchased through registrars 
+                  and must be renewed periodically to remain active. Hosting, on the other hand, is the service that provides the physical space where 
+                  your website's files, images, databases, and code live. It's like renting land for your house — without hosting, your website can’t 
+                  be accessed online even if you own a domain. Together, the domain points users to the hosting server, which then loads and displays your website content.
+                </div>
+              </div>
+            </div><!-- TODO Faq item-->
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq-content-2">
+                  <span class="num"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                  Which server is best for websites linux or windows?
+                </button>
+              </h3>
+              <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                <div class="accordion-body">
+                  When choosing between Linux and Windows servers for hosting a website, Linux is generally considered the best option for most websites. 
+                  It’s open-source, stable, secure, and supports popular web technologies like PHP, MySQL, Python, and Apache/Nginx — which are widely used 
+                  in platforms like WordPress, Joomla, and Drupal. Linux servers are also cost-effective since they don’t require licensing fees. 
+                  Windows servers, on the other hand, are ideal if your website or application relies on Microsoft technologies such as ASP.NET, MSSQL, 
+                  or uses Windows-specific software. They offer full compatibility with the Microsoft ecosystem but often come at a higher cost and require 
+                  more resources. In summary, go with Linux for general-purpose, high-performance, and budget-friendly hosting — but choose Windows only 
+                  if your project specifically depends on Microsoft tools.
+                </div>
+              </div>
+            </div><!-- TODO Faq item-->
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq-content-3">
+                  <span class="num"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                  Google cloud or Amazon server which one is best and fast?
+                </button>
+              </h3>
+              <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                <div class="accordion-body">
+                  Google Cloud Platform (GCP) and Amazon Web Services (AWS) are both top-tier cloud providers, offering powerful, scalable, and reliable 
+                  infrastructure for hosting websites, applications, and services. In terms of speed, both have global data centers, advanced networking, 
+                  and content delivery networks (CDNs) that ensure fast performance worldwide. Google Cloud is often praised for its high-speed internal 
+                  network and innovative AI/ML integrations, while AWS is known for its vast range of services, mature ecosystem, and strong enterprise support. 
+                  Choosing the best one depends on your specific needs. Google Cloud may be a better fit for startups, developers, or businesses leveraging Google’s 
+                  ecosystem (like Firebase, BigQuery, or TensorFlow), while AWS is typically favored by large enterprises or projects needing broad service flexibility 
+                  and deeper integrations. Overall, both are fast and reliable — the "best" comes down to what you're building, your team’s expertise, and your budget.
+                </div>
+              </div>
+            </div><!-- TODO Faq item-->
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq-content-4">
+                  <span class="num"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                  Why Organic SEO is important for all businesses?
+                </button>
+              </h3>
+              <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                <div class="accordion-body">
+                 Organic SEO (Search Engine Optimization) is the practice of optimizing your website and content to rank higher in search 
+                 engine results without paying for ads. It involves using relevant keywords, improving site structure, and creating valuable content that aligns with what people are searching for. 
+                 This helps increase visibility, attract more visitors, and build long-term credibility with search engines like Google. 
+                 For businesses, organic SEO is crucial because it drives consistent, high-quality traffic without ongoing ad spend. It builds trust with customers, enhances brand authority, and provides 
+                 a competitive edge by helping your site appear above competitors in search results. Over time, strong organic SEO delivers 
+                 better return on investment and helps businesses grow sustainably.
+                </div>
+              </div>
+            </div><!-- TODO Faq item-->
+          </div>
+        </div>
+      </div>
+      </section>
+    </div>
+  </div>
+  <!-- ! End FAQ's -->
+  <!-- ! Start Footer -->
+  <footer id="footer" class="footer-section">
+    <div class="container">
+      <div class="footer-content pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 mb-50">
+            <div class="footer-widget">
+              <div class="footer-logo">
+                <a href="index.html" class="logo d-flex align-items-center">
+                  <img src="images/logo.png" alt="logo">
+                </a>
+              </div>
+              <div class="footer-text">
+                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec
+                  tetur adipisicing
+                  elit,Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="footer-social-icon">
+                <span>Follow us</span><a href="#" target="_blank">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/1ahmed-allam/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+            <div class="service-widget footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Services</h3>
+              </div>
+              <ul class="list">
+                <li><a href="services.html">Managed Services</a></li>
+                <li><a href="services.html">Business Continuity Planning</a></li>
+                <li><a href="services.html">IT Consulting</a></li>
+                <li><a href="services.html">Security</a></li>
+                <li><a href="services.html">On Demand Services</a></li>
+                <li><a href="services.html">Cloud Services</a></li>
+                <li><a href="services.html">VoIP</a></li>
+                <li><a href="services.html">Virtualization</a></li>
+                <li><a href="services.html">Email / Spam Protection</a></li>
+                <li><a href="services.html">Healthcare</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+            <div class="service-widget footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Information</h3>
+              </div>
+              <ul class="list">
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="blog-details.html">Blog Details</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+            <div class="contact-widget footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Contacts</h3>
+              </div>
+              <div class="footer-text">
+                <p><i class="fa-solid fa-location-dot"></i> 101 West Town , PBO 12345, United States</p>
+                <p><i class="fa-solid fa-phone"></i></i> +1 1234 56 789</p>
+                <p><i class="fa-solid fa-envelope"></i> contact@example.com</p>
+              </div>
+            </div>
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Newsletter</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <p>Don't miss to subscribe to our new feeds, kindly fill the form below.</p>
+              </div>
+              <div class="subscribe-form">
+                <form action="#" id="email-form">
+                  <input type="text" placeholder="Email Address" id="email-input">
+                  <button id="submit-button">
+                    <i class="fa-brands fa-telegram"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ! End Footer -->
+  <!---------------------------------------------------------------------------->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- ! This Render Icon As SVG... -->
+  <script src="js/all.min.js"></script>
+  <!-- ! JavaScript File -->
+  <script src="js/main.js"></script>
+  <script src="js/aos.js"></script>
+</body>
+
+</html>

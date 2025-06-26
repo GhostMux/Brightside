@@ -131,8 +131,7 @@
 
       const bufferInterval = setInterval(() => {
         if (i < scanBuffer.length) {
-          terminal.textContent += scanBuffer[i++] + "
-";
+          terminal.textContent += scanBuffer[i++] + "";
           terminal.scrollTop = terminal.scrollHeight;
         } else {
           clearInterval(bufferInterval);

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Web Email Scanner</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      color: #00ff00;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      text-align: center;
+    }
+    input[type="email"] {
+      background: black;
+      border: 1px solid #00ff00;
+      color: #00ff00;
+      padding: 10px;
+      font-size: 18px;
+      width: 300px;
+      text-align: center;
+      outline: none;
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: black;
+      border: 1px solid #00ff00;
+      color: #00ff00;
+      font-size: 16px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    .terminal {
+      margin-top: 20px;
+      text-align: left;
+      width: 80vw;
+      height: 300px;
+      background: #111;
+      padding: 15px;
+      overflow-y: auto;
+      border: 1px solid #00ff00;
+      white-space: pre-wrap;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Dark Web Breach Scanner</h1>
+    <form id="emailForm" onsubmit="return false;">
+      <input type="email" id="email" placeholder="Enter your email" autocomplete="off" required />
+      <br>
+      <button id="submitBtn" onclick="showHackedAccounts()">Scan</button>
+    </form>
+    <div id="terminal" class="terminal hidden"></div>
+  </div>
+
+  <script>
+    function showHackedAccounts() {
+      const email = document.getElementById("email").value;
+      const terminal = document.getElementById("terminal");
+
+      if (!email || !email.includes("@")) {
+        terminal.classList.remove("hidden");
+        terminal.textContent = "Error: Please enter a valid email address.";
+        return;
+      }
+
+      const breaches = [
+        "Netflix (2020): Password123!",
+        "Facebook (2019): qwerty123",
+        "LinkedIn (2021): hunter2",
+        "Adobe (2013): abc123",
+        "Dropbox (2012): mysecurepass",
+        "Tumblr (2013): password1",
+        "MyFitnessPal (2018): summer2018",
+        "Canva (2019): ilovecats",
+        "Zynga (2019): gaminglegend",
+        "Evite (2019): partytime123"
+      ];
+
+      const scanBuffer = [
+        "Initializing secure node connection...",
+        "Pinging darknet mirror nodes...",
+        "Establishing encrypted tunnels...",
+        "Bypassing CDN scrubbing filters...",
+        "Spoofing MAC address...",
+        "Launching proxy chain...",
+        "apt-get update",
+        "Hit:1 http://kali.download/kali kali-rolling InRelease",
+        "Get:2 http://kali.download/kali kali-rolling/main amd64 Packages [21.1 MB]",
+        "Fetched 21.1 MB in 3s (7,000 kB/s)",
+        "Reading package lists... Done",
+        "Building dependency tree...",
+        "Reading state information...",
+        "Checking encryption modules...",
+        "Module loaded: AES-256-CBC",
+        "Module loaded: SHA-512 Hashing",
+        "Generating session fingerprint...",
+        "Session ID: 98f3b2ac-934e-42a9-aef3-a6b8eaf91b0d",
+        "Validating SOCKS5 proxy route...",
+        "Proxy 185.220.101.1 OK",
+        "Proxy 185.220.101.2 OK",
+        "Proxy 185.220.101.3 OK",
+        "Establishing Tor handshake...",
+        "Hidden service onion connected",
+        "Injecting scan payload to data brokers...",
+        "Querying credentials marketplace...",
+        "Waiting for node consensus (6/10)...",
+        "Consensus achieved.",
+        "Executing credential dump via breach DB...",
+        "Retrieving compressed dataset...",
+        "Decompressing records...",
+        "Analyzing hash data...",
+        `\nScanning for breaches tied to: ${email}\n`
+      ];
+
+      let i = 0;
+      terminal.classList.remove("hidden");
+      terminal.textContent = "";
+
+      const bufferInterval = setInterval(() => {
+        if (i < scanBuffer.length) {
+          terminal.textContent += scanBuffer[i++] + "
+";
+          terminal.scrollTop = terminal.scrollHeight;
+        } else {
+          clearInterval(bufferInterval);
+          breaches.forEach((b, index) => {
+            terminal.textContent += `[${index + 1}] ${b}
+`;
+          terminal.scrollTop = terminal.scrollHeight;
+          });
+          terminal.textContent += `
+Status: 10 breaches found.
+Recommendation: Change your password immediately.`;
+          terminal.scrollTop = terminal.scrollHeight;
+        }
+      }, 200);
+    }
+  </script>
+</body>
+</html>

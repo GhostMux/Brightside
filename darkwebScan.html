@@ -136,8 +136,7 @@
         } else {
           clearInterval(bufferInterval);
           breaches.forEach((b, index) => {
-            terminal.textContent += `[${index + 1}] ${b}
-`;
+            terminal.textContent += `[${index + 1}] ${b}`;
           terminal.scrollTop = terminal.scrollHeight;
           });
           terminal.textContent += `
